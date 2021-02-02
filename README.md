@@ -53,3 +53,5 @@ This table is used to store the last data import time. It has a single entry tha
 #### LastRefresh_UTC
 
 - Last Refresh (UTC) (M): Formats the datetime value in LastRefresh_UTC as a string.
+
+*Authors: Narmatha Balasundaram, Richard Guo*
