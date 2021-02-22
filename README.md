@@ -2,7 +2,23 @@
 
 ## Overview
 
-This repository contains a report that consolidates pipeline runs across multiple projects in the Azure DevOps Organization. The Power BI Template  queries Azure DevOps using REST APIs and fetches organization-wide data using multiple project-level queries.
+This repository contains a report that consolidates pipeline runs across multiple projects in the Azure DevOps Organization. The Power BI Template  queries Azure DevOps using the [OData](https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-odata) REST APIs and fetches organization-wide data using multiple project-level queries.
+
+## Setup Instructions
+
+1. Download [PowerBI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494). Note: a Windows machine or VM will be needed to run the application.
+
+2. Open `AzureDevOpsPipelines-Reporting-PowerBI.pbit`.
+
+3. Once the file is opened, you will be prompted to provide an AzDO Organization name. The pipelines for all readable projects under this organization will be used for the report.
+
+4. After providing an organization, the app will prompt you to sign in to Azure DevOps. For more information, see [here](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/access-analytics-power-bi?view=azure-devops). Note: the user access you sign in with determines which projects and pipelines will be loaded from AzDO.
+
+5. AzDO data will begin to load and fail. To get the queries to complete, go to `File > Options and Settings > Options > Current File > Privacy` and check `Ignore the Privacy Levels and potentially improve performance`.
+
+Step 5 is necessary because multiple external data queries must be combined in order to retrieve information from different projects. Because all queries are read-only, this step is safe to perform. This [blog post](https://www.poweredsolutions.co/2019/03/12/data-privacy-and-the-formula-firewall/) provides a good overview on the issue. 
+
+## Documentation
 
 ### Data Tables
 
