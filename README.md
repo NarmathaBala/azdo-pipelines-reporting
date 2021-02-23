@@ -12,7 +12,7 @@ This repository contains a report that consolidates pipeline runs across multipl
 
 3. Once the file is opened, you will be prompted to provide an AzDO Organization name. The pipelines for all readable projects under this organization will be used for the report.
 
-4. After providing an organization, the app will prompt you to sign in to Azure DevOps. For more information, see [here](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/access-analytics-power-bi?view=azure-devops). Note: the user access you sign in with determines which projects and pipelines will be loaded from AzDO.
+4. After providing an organization, the app will prompt you to sign in to Azure DevOps. We recommend using a Personal Access Token (PAT) to sign in. For more information, see [here](https://docs.microsoft.com/en-us/azure/devops/report/powerbi/client-authentication-options?view=azure-devops). Note: the user access you sign in with determines which projects and pipelines will be loaded from AzDO.
 
 5. AzDO data will begin to load and fail. To get the queries to complete, go to `File > Options and Settings > Options > Current File > Privacy` and check `Ignore the Privacy Levels and potentially improve performance`.
 
