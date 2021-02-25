@@ -1,3 +1,11 @@
+---
+page_type: sample
+languages:
+- odata
+products:
+- azure-devops
+- power-bi
+---
 # azdo-pipelines-reporting
 
 ## Overview
@@ -16,7 +24,7 @@ This repository contains a report that consolidates pipeline runs across multipl
 
 5. AzDO data will begin to load and fail. To get the queries to complete, go to `File > Options and Settings > Options > Current File > Privacy` and check `Ignore the Privacy Levels and potentially improve performance`.
 
-Step 5 is necessary because multiple external data queries must be combined in order to retrieve information from different projects. Because all queries are read-only, this step is safe to perform. This [blog post](https://www.poweredsolutions.co/2019/03/12/data-privacy-and-the-formula-firewall/) provides a good overview on the issue. 
+Step 5 is necessary because multiple external data queries must be combined in order to retrieve information from different projects. Because all queries are read-only, this step is safe to perform. This [blog post](https://www.poweredsolutions.co/2019/03/12/data-privacy-and-the-formula-firewall/) provides a good overview on the issue.
 
 ## Documentation
 
