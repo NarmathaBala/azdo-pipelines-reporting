@@ -1,5 +1,7 @@
 ---
 page_type: sample
+description:
+- A sample Power BI report consolidating pipeline health information using AzDO REST APIs.
 languages:
 - odata
 products:
