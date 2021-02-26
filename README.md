@@ -6,7 +6,7 @@ products:
 - azure-devops
 - power-bi
 ---
-# azdo-pipelines-reporting
+# Power BI Report Sample for Azure DevOps
 
 ## Overview
 
